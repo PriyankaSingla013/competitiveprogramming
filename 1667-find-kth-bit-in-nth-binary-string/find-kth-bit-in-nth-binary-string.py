@@ -8,5 +8,4 @@ class Solution:
                     s=s+'0'
                 else:
                     s=s+'1'
-            print(s)
         return s[k-1]
