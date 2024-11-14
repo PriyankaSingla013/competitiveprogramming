@@ -23,7 +23,6 @@ class Solution:
                 start=i+modulo
             if start<n:
                 res+=l[i]*x[start]
-                print(res,l[i],l[start])
             
         return res
             
