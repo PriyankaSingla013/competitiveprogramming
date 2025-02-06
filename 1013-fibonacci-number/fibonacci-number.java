@@ -1,14 +1,14 @@
 class Solution {
-    Map<Integer,Integer> map=new HashMap<>();
     public int fib(int n) {
         if(n<2){
             return n;
         }
-        if(map.containsKey(n)){
-            map.get(n);
+        int s1=0,s2=1;
+        for(int i=2;i<=n;i++){
+            int next=s1+s2;
+            s1=s2;
+            s2=next;
         }
-        int res= fib(n-1)+fib(n-2);
-        map.put(n,res);
-        return res;
+        return s2;
     }
 }
